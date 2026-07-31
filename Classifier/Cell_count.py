@@ -35,9 +35,9 @@ def arrays_separation(img):
     """
     
     # Background correction
-    correction = np.ones((17, 3200, 3200))
-    img = img + correction
-    img[img == 2] = 0 # Bkgrd
+    # correction = np.ones((17, 3200, 3200))
+    # img = img + correction
+    # img[img == 2] = 0 # Bkgrd
 
     # Seperation spore-VC arrays
     img_sp, img_vc = np.copy(img), np.copy(img)
@@ -106,7 +106,9 @@ def classification(spores, vegetative, image_id):
                 "Area": prop.area,
                 "Volume": volume,
                 "Surface_area": surface_area,
-                "Sphericity": psi
+                "Sphericity": psi,
+                "Axis_major_length": prop.axis_major_length,
+                "Axis_minor_length": prop.axis_minor_length,
             }
             d = pd.DataFrame(data, index=[0])
             results = pd.concat([results, d], ignore_index = True)
@@ -115,34 +117,39 @@ def classification(spores, vegetative, image_id):
 
 
 # %% Script image processing
+
+dirpath = r'E:/input'
+
 # Read image folder
-# images = []
-# for file in pathlib.Path(r'C:/Users/nmassoulie/Desktop/input_PC_images/Segmented/').iterdir():
-#     if not file.is_file():
-#         continue
-    
-#     file_name, file_extension = os.path.splitext(file.name)
-#     images.append((file_name, iio.imread(file)))
-    
-#     for file_name, image in images:
-#         img_sp, img_vc = arrays_separation(image)
-#         results = classification(img_sp, img_vc, file_name)
-
-
-all_results = pd.DataFrame()
-
-for file in pathlib.Path(r'C:/Users/nmassoulie/Desktop/input_PC_images/Segmented').iterdir():
+images = []
+for file in pathlib.Path(dirpath).iterdir():
     if not file.is_file():
         continue
+    
+    file_name, file_extension = os.path.splitext(file.name)
+    images.append((file_name, iio.imread(file)))
+    
+    for file_name, image in images:
+        img_sp, img_vc = arrays_separation(image)
+        results = classification(img_sp, img_vc, file_name)
 
-    file_name = file.stem          
-    image = iio.imread(file)
 
-    img_sp, img_vc = arrays_separation(image)
-    results = classification(img_sp, img_vc, file_name)
 
-    all_results = pd.concat([all_results, results], ignore_index=True)
-    all_results = all_results[(all_results['Area'] > 5)]
+
+# all_results = pd.DataFrame()
+
+# for file in pathlib.Path(dirpath).iterdir():
+#     if not file.is_file():
+#         continue
+
+#     file_name = file.stem          
+#     image = iio.imread(file)
+
+#     img_sp, img_vc = arrays_separation(image)
+#     results = classification(img_sp, img_vc, file_name)
+
+#     all_results = pd.concat([all_results, results], ignore_index=True)
+#     all_results = all_results[(all_results['Area'] > 5)]
     
 
         
