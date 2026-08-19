@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}
+\usepackage{geometry}
+\usepackage{graphicx} 
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}
+\usepackage[svgnames,x11names]{xcolor}
+\usepackage{hyperref}
+
+
+\geometry{left=1.5cm, top=2cm, right=1.5cm, bottom=2cm}     %| Page size
+
+\renewcommand{\title}{\RaggedRight{\LARGE\underline{\textbf{Myxospores isolation individual FBs protocols}}}}
+
+
+\begin{document}
+
+\title
+
+\vspace{1cm}
+
+
+
+\noindent\href{https://www.overleaf.com/read/pvggvjqnrpzn#8dcc23}{Link to the protocol}
+
+% Myxospores isolation
+\subsection*{Protocol: Myxospores isolation}
+
+\begin{itemize}[itemsep=-0.1em]
+    \item Take pictures of FBs plates before and after harvest
+    \item Harvest 2 times 20 FBs for each experimental conditions in:
+    \begin{itemize}[itemsep=-0.2em, topsep=-0.2em]
+        \item[-] 100 µL BSA (\textit{200 concentration condition}
+        \item[-] 1 mL BSA (\textit{'Usual' condition)} 
+    \end{itemize}
+    \item  2 washing: centrifugation 10 min at $8000\times g$ with MM,
+    \item Complete volume to 200 µL (\textit{200 concentration condition}) and 2 mL (\textit{Usual condition}),
+    \item Sonication: \textit{Time} 2 min, \textit{Pulse} 10 sec ON / 15 sec OFF, \textit{Amplitude} 28\%, \textit{Probe} 60-62k,
+    \item Heat Treatment 2 h,
+    \item\underline{Only for Usual condition}: Concentration at 200 µL then homogenisation (2nd sonication) \textit{Time} 30 sec at same parameters (c.f. 1st sonication parameters above),
+    \item Imaging at ×40 in phase contrast (and fluorescence) using Malassez slide (counting chamber)
+\end{itemize}
+
+
+% Image processing
+\subsection*{Protocol: Image processing}
+
+\noindent \textcolor{Coral3}{BE CAREFUL} Images must be taken off grid in the counting chamber. Check script/notebook, there is conditions to satisfy before image processing.
+
+\begin{itemize}[itemsep=-0.1em]
+    \item Prepare three working directories: 
+    \begin{itemize}[topsep=-0.2em]
+        \item[] 1-Input\_images; 
+        \item[] 2-Phase\_contrast\_images;
+        \item[] 3-Segmented\_images
+    \end{itemize}
+    \item On Fiji: Execute the macro channel splitter {\fontfamily{lmss}\selectfont \textcolor{Blue4}{Macro\_Fildir\_channel\_splitter.ijm}}
+    \item On Fiji: Execute \textbf{Plungins  >  Labkit  >  Macro Recordable  >  Segment Images in Directory with Labkit} with the classifier file {\fontfamily{lmss}\selectfont \textcolor{Blue4}{Classifier\_sp\_vc.classifier}}
+    \item Execute \textcolor{Blue4}{Automated\_workflow.py}
+    \item A new directory would appear with the Result dataset
+\end{itemize}
+
+
+\end{document}
