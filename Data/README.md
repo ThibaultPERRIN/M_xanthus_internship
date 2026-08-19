@@ -2,12 +2,14 @@
 
 --------
 
+
 20260727_FB_homogenisation_conditions_count
 
 
+- Use: CAN be used in Python (data)
 - Description:
   - Test the impact, through different experimental parameters (Amplitude, Pulse, Time) of the myxospores solution's homogenisation (2nd sonication -  c.f. myxospores isolation protocol).
-  - Two replicates in the dataset: *20/07/2026* & *27/07/2026*
+  - Two replicates in the dataset (one replicate per day): *20/07/2026* & *27/07/2026*
 - Experiment:
   - (1) Myxospores isolation protocol
   - (2) Homogenisation - 2nd Sonication:
@@ -36,5 +38,64 @@
     - $Small \geq 3 objects$ ;
     - $Medium \geq 20 objects$ ;
     - $Large \geq 50 objects$
-    - 
+
+
 --------
+
+
+20260804_CFU_assay
+
+
+- Use: CANNOT be used in python (observation)
+- Description:
+  - CFU assay from individual FB (Fruiting body) spores isolation experiment, using 20 FBs
+  - Three replicates in the dataset (one replicate per day): *27/07/2026*, *29/07/2026* & *04/08/2026* 
+- Experiment:
+  - (1) Myxospores isolation protocol
+  - (2) Imaging conditions:
+    - 200 µL concentrated solution (without homogenisation)
+    - 'Usual' protocol (with homogenisation)
+  - (3) CFU assays: Colonies counted after days from inoculation 
+- Features
+  - *Group* (str): Group corresponding to a replicate
+  - *Usual protocol* (int): 'Usual protocol' condition
+  - *200 concentrated* (int): 200 µL concentrated condition
+
+
+--------
+
+
+20260804_Myxospores_isolation_isolated_FB_protocol_conditions
+
+
+- Description:
+- Experiment:
+- Features:
+  - Image_ID
+  - Condition_protocol
+  - N_clumps
+  - Manual_count_objects
+  - Object_type
+
+
+--------
+
+
+- Description:
+- Experiment:
+- Features
+
+
+
+
+- Description:
+- Experiment:
+- Features
+
+
+
+
+- Description:
+- Experiment:
+- Features
+
