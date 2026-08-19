@@ -4,8 +4,6 @@ import skimage as ski
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import math
-import tifffile
 import pathlib
 import imageio.v3 as iio
 import time
