@@ -2,9 +2,8 @@
 
 
 Repository for image analysis of Myxococcus xanthus spores and their properties. 
-All protocols can be found in this repository at:
+All protocols can be found in his own directory at:
 - *Myxospores_isolation_individual_FBs_protocol*
-- *Myxospores_image_processing_protocol*
 
 
 ### Imaging
