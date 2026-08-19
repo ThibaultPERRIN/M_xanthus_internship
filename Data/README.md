@@ -31,7 +31,10 @@
   - *Time* (int): Duration of 2nd sonication
   - *N_objects* (int): Number of objects (vegetative cells  and spores) manually counted
   - *N_cluster* (int): Number of clusters manually counted
-  - *Cluster_size* (str): Size of the clusters. Arbitrary chosen: $None = No cluster$ ; $Small \geq 3 objects$ ; $Medium \geq 20 objects$ ; $Large \geq 50 objects$
-
-
+  - *Cluster_size* (str): Size of the clusters. Arbitrary chosen:
+    - $None = No cluster$ ;
+    - $Small \geq 3 objects$ ;
+    - $Medium \geq 20 objects$ ;
+    - $Large \geq 50 objects$
+    - 
 --------
