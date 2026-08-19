@@ -3,7 +3,7 @@
 --------
 
 
-20260727_FB_homogenisation_conditions_count
+__20260727_FB_homogenisation_conditions_count__
 
 
 - Use: CAN be used in Python (data)
@@ -39,11 +39,13 @@
     - $Medium \geq 20 objects$ ;
     - $Large \geq 50 objects$
 
+\\
 
 --------
 
+\\
 
-20260804_CFU_assay
+__20260804_CFU_assay__
 
 
 - Use: CANNOT be used in python (observation)
