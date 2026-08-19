@@ -1,7 +1,7 @@
 # *Internship / LCB (CNRS UMR7283)  - Myxoccocus xanthus*
 
 
-Repository for image analysis of Myxococcus xanthus spores and their properties. 
+Repository for image analysis of Myxococcus xanthus spores and their properties.\
 All protocols can be found in his own directory at: *Myxospores_isolation_individual_FBs_protocol*
 
 
