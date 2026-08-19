@@ -8,12 +8,11 @@ All protocols can be found in this repository at:
 
 
 ### Imaging
-#### Material
+Material
 - FBs colonies were observed under stereoscope olympus
 - Spores and vegettives cells were observed under epifluorescence microscope TIE
 
-#### Image processing
-Image processing was done using:
+Image processing
 - Fiji version 2.16.0 / ImageJ 1.54p ; Java 1.8.0_452
 - Labkit - Pixel Classification plugin fiji integrated
 - Python 3.14.6 | packaged by conda-forge
