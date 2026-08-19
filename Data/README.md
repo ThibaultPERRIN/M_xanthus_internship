@@ -2,8 +2,9 @@
 
 --------
 
+/
 
-__20260727_FB_homogenisation_conditions_count__
+<ins>**20260727_FB_homogenisation_conditions_count**</ins>
 
 
 - Use: CAN be used in Python (data)
@@ -39,13 +40,13 @@ __20260727_FB_homogenisation_conditions_count__
     - $Medium \geq 20 objects$ ;
     - $Large \geq 50 objects$
 
-\\
+\
 
 --------
 
-\\
+\
 
-__20260804_CFU_assay__
+<ins>**20260804_CFU_assay**</ins>
 
 
 - Use: CANNOT be used in python (observation)
