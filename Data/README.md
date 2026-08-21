@@ -47,7 +47,7 @@ Folder: <ins>20260804_measurements_FB_colonies</ins>
       | 25          | 10 / 15          | 30     | ×                                         |
       | 25          | 20 / 15          | 15     | ×                                         |
       | 28          | 5 / 15           | 30     | ×                                         |
-      | 28          | 10 / 15          | 30     | Usual condition used from begining        |
+      | 28          | 10 / 15          | 30     | Protocol condition                        |
       | --           | -------         | --     | 'Control' / 'Unsonicated' = No sonication |
       
 - Features:
